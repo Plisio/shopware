@@ -1,0 +1,43 @@
+{
+    "name": "plisio/plisiopayment",
+    "description": "Plisio payment gateway for Shopware",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "require": {
+        "shopware/core": "~6.6"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PlisioPaymentGateway\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Plisio",
+            "email": "plugins@plisio.net"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "symfony/runtime": true
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "PlisioPaymentGateway\\PlisioPaymentGateway",
+        "copyright": "(c) Plisio",
+        "plugin-icon": "src/Resources/config/plugin.jpg",
+        "label": {
+            "en-GB": "Plisio Payment Gateway for Shopware"
+        },
+        "description": {
+            "en-GB": "Accept Bitcoin, Litecoin, Ethereum and other coins with Plisio."
+        },
+        "manufacturerLink":{
+            "en-GB": "https://plisio.net/"
+        },
+        "supportLink":{
+            "en-GB": "https://plisio.net/"
+        }
+    }
+}
